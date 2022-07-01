@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Video from '../../videos/video.mp4';
-import { Button } from '../ButtonElements';
 import {
   HeroContainer,
   HeroBg,
@@ -9,8 +8,8 @@ import {
   HeroH1,
   HeroP,
   HeroBtnWrapper,
-  ArrowForward,
-  ArrowRight
+  Btn,
+  BtnLink
 } from './HeroElements';
 
 const HeroSection = () => {
@@ -32,20 +31,9 @@ const HeroSection = () => {
           our professional barbers.
         </HeroP>
         <HeroBtnWrapper>
-          <Button
-            to="signup"
-            onMouseEnter={onHover}
-            onMouseLeave={onHover}
-            primary="true"
-            dark="true"
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact="true"
-            offset={-80}
-          >
-            Book now {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
+          <Btn>
+            <BtnLink to="/book">Book Now</BtnLink>
+          </Btn>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>
