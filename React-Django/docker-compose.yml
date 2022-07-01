@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  backend:
+    build:
+      context: ./project1
+    command: gunicorn core.wsgi
