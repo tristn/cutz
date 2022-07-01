@@ -75,13 +75,13 @@ function Note() {
           onChange={handleChange}
           text={formNote.title}
           name="title"
-          placeholder="Title"
+          placeholder="Name"
           value={formNote.title}
         />
         <textarea
           onChange={handleChange}
           name="content"
-          placeholder="Take a note..."
+          placeholder="Desired date/time..."
           value={formNote.content}
         />
         <button onClick={createNote}>Create Post</button>
